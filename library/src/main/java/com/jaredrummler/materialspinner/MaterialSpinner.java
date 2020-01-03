@@ -175,12 +175,12 @@ public class MaterialSpinner extends TextView {
     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
       @Override public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        if (position >= selectedIndex
-            && position < adapter.getCount()
-            && adapter.getItems().size() != 1
-            && TextUtils.isEmpty(hintText)) {
-          position++;
-        }
+//        if (position >= selectedIndex
+//            && position < adapter.getCount()
+//            && adapter.getItems().size() != 1
+//            && TextUtils.isEmpty(hintText)) {
+//          position++;
+//        }
         selectedIndex = position;
         nothingSelected = false;
         Object item = adapter.get(position);
