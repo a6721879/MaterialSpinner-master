@@ -31,11 +31,13 @@ public class MaterialSpinnerAdapter<T> extends MaterialSpinnerBaseAdapter {
 
   @Override public int getCount() {
     int size = items.size();
+    if (size > 2) return size - 1;
     return size;
   }
 
   @Override public T getItem(int position) {
-      return items.get(position);
+    if (items.size() > 2) return items.get(position + 1);
+    return items.get(position);
   }
 
   @Override public T get(int position) {

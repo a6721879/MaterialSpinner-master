@@ -19,6 +19,7 @@ package com.jaredrummler.materialspinner.example;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -32,19 +33,20 @@ import com.jaredrummler.materialspinner.MaterialSpinner;
 public class MainActivity extends AppCompatActivity {
 
   private static final String[] ANDROID_VERSIONS = {
-      "Cupcake",
-      "Donut",
-      "Eclair",
-      "Froyo",
-      "Gingerbread",
-      "Honeycomb",
-      "Ice Cream Sandwich",
-      "Jelly Bean",
-      "KitKat",
-      "Lollipop",
-      "Marshmallow",
-      "Nougat",
-      "Oreo"
+          "请选择",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
   };
 
   @Override protected void onCreate(Bundle savedInstanceState) {

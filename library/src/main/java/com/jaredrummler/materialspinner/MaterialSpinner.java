@@ -181,16 +181,16 @@ public class MaterialSpinner extends TextView {
 //            && TextUtils.isEmpty(hintText)) {
 //          position++;
 //        }
-        selectedIndex = position;
+        selectedIndex = position + 1;
         nothingSelected = false;
-        Object item = adapter.get(position);
-        adapter.notifyItemSelected(position);
+        Object item = adapter.get(position + 1);
+        adapter.notifyItemSelected(position + 1);
         setTextColor(textColor);
         setText(item.toString());
         collapse();
         if (onItemSelectedListener != null) {
           //noinspection unchecked
-          onItemSelectedListener.onItemSelected(MaterialSpinner.this, position, id, item);
+          onItemSelectedListener.onItemSelected(MaterialSpinner.this, position + 1, id, item);
         }
       }
     });
